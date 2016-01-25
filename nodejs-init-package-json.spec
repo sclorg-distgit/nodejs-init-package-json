@@ -3,7 +3,7 @@
 %{?nodejs_find_provides_and_requires}
 
 Name:           %{?scl_prefix}nodejs-init-package-json
-Version:        1.0.0
+Version:        1.9.1
 Release:        1%{?dist}
 Summary:        A node module to get your node module started
 BuildArch:      noarch
@@ -42,6 +42,9 @@ rm -rf %buildroot
 %{nodejs_sitelib}/init-package-json
 %doc README.md example/example-basic.js  example/example-default.js  example/example-npm.js
 %changelog
+* Mon Nov 30 2015 Tomas Hrcka <thrcka@redhat.com> - 1.9.1-1
+- New upstream release
+
 * Fri Jan 09 2015 Tomas Hrcka <thrcka@redhat.com> - 1.0.0-1
 - New upstream release 1.0.0
 
